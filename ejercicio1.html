@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .miclase{
+            color: purple;
+            background: yellow;
+        }
+   
+    </style>
+    
+</head>
+<body>
+    
+   
+    <h1>Un titulo</h1>
+    <h2>Esto es un subtitulo</h2>
+
+    <p>1. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Facere ex quis inventore 
+        repudiandae, in facilis dignissimos 
+        labore iure vitae blanditiis est.</p>
+    <p id="segundoparrafo">2. Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facere ex quis inventore 
+            possimus ipsa deleniti accusamus laboriosam 
+            labore iure vitae blanditiis est.</p>
+    <p>3. Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Facere ex quis inventore 
+           ossimus ipsa deleniti accusamus laboriosam 
+            labore iure vitae blanditiis est.</p>
+
+    
+            <script>
+   
+                //    elem = document.createElement("p");
+                //    text = document.createTextNode("4. Soy un nuevo parrafo");
+                //    elem.setAttribute("class","miclase");
+                //    elem.appendChild(text);
+                //    document.body.appendChild(elem);
+                
+                imagen = document.createElement("img");
+                imagen.setAttribute("src", "imagen.jpg");
+                imagen.setAttribute("alt", "Imagen diplomado");
+                imagen.setAttribute("width", "400px");
+                imagen.setAttribute("height", "200px");
+
+                document.body.appendChild(imagen);
+
+                /* agregando una tabla al documento */
+
+                tabla = document.createElement("table");
+
+                fila = document.createElement("tr");
+                
+                celda = document.createElement("th");
+                info = document.createTextNode("Asignatura");
+                celda.appendChild(info);
+                fila.appendChild(celda);
+
+                celda = document.createElement("th");
+                info = document.createTextNode("Dia");
+                celda.appendChild(info);
+                fila.appendChild(celda);
+
+                celda = document.createElement("th");
+                info = document.createTextNode("Hora");
+                celda.appendChild(info);
+                fila.setAttribute("style", "background-color:red; color: white;");
+                fila.appendChild(celda);
+
+                //segunda fila
+                fila2 = document.createElement("tr");
+                celda = document.createElement("td");
+                info = document.createTextNode("Matematicas");
+                celda.appendChild(info);
+                fila2.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("Lunes");
+                celda.appendChild(info);
+                fila2.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("05:00 pm");
+                celda.appendChild(info);
+                fila2.appendChild(celda);
+
+                //tercera fila
+                fila3 = document.createElement("tr");
+                celda = document.createElement("td");
+                info = document.createTextNode("Ingles");
+                celda.appendChild(info);
+                fila3.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("Martes");
+                celda.appendChild(info);
+                fila3.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("07:00 am");
+                celda.appendChild(info);
+                fila3.appendChild(celda);
+
+                //cuarta fila
+                
+                fila4 = document.createElement("tr");
+                celda = document.createElement("td");
+                info = document.createTextNode("Español");
+                celda.appendChild(info);
+                fila4.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("Viernes");
+                celda.appendChild(info);
+                fila4.appendChild(celda);
+
+                celda = document.createElement("td");
+                info = document.createTextNode("06:00 pm");
+                celda.appendChild(info);
+                fila4.appendChild(celda);
+
+               
+                
+                
+
+
+                tabla.appendChild(fila);
+                tabla.appendChild(fila2);
+                tabla.appendChild(fila3);
+                tabla.appendChild(fila4);
+                tabla.setAttribute("border","1px");
+                tabla.setAttribute("width", "500px");
+                document.body.appendChild(tabla);
+
+
+               
+
+
+
+
+
+
+
+
+                 
+            </script>
+</body>
+</html>
